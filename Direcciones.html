@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="Estilos/Direcciones.css">
+</head>
+
+<body>
+ <header id="navegacion">
+    <img id="icono" src="Imagenes/logoT.png" alt="Logo Track or Truck">
+        
+        <h2 id="tituloTOT">
+            <span>Track</span>
+            <span>Or</span>
+            <span>Truck</span>
+        </h2>
+
+        <nav>
+ <ul id="opcionesBar">
+            <li><a href="Buscar.html"><img id="buscarimagen" src="Imagenes/Buscar.png">Buscar</a></li>
+            <li><a href="Intereses.html"><img id="tusintereses" src="Imagenes/Corazon.png">Tus intereses</a></li>
+            <li><a href="Direcciones.html"><img id="Dondecontrarlos" src="Imagenes/Mapa.png">Donde Encontrarlos</a></li>
+            <li><a href="Venta.html"><img id="Ventaimagen" src="Imagenes/Venta.png">Venta</a></li>
+            <li><a href="Contactanos.html"><img id="Contactanosimag" src="Imagenes/Contactos.png">Contactanos</a></li>
+            <li><a href="Registro.html"><img id="Loginfoto" src="Imagenes/Perfil.png"></a></li>
+        </ul>
+        </nav>
+    </header>
+<section id="secDirec">
+    <select id="marca">
+        <option value="" disabled selected>Selecciona una marca</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Honda">Honda</option>
+        <option value="Hyundai">Hyundai</option>
+        <option value="Ford">Ford</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Kia">Kia</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Suzuki">Suzuki</option>
+        <option value="Renault">Renault</option>
+    </select>
+
+    <div id="mapFon">
+        <div id="mapa" style="width:100%; height:55vh;"></div>
+    </div>
+
+</section>
+<script src="Java/Direcciones.js">
+</script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdZ6vmhX2RTAej3m-72_OSYTqF47Eq68A&callback=initMap">
+</script>
+</body>
+</html>
